@@ -6,15 +6,72 @@
                 scroll-behavior: smooth;
             }
 
+            .home-svg-con{
+              
+              width: 50%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              column-gap: 1.5em;
+              padding-top: 4px;
+              
+              
+             }
+
+             .home-svg-child{
+              width: 17px;
+             }
+
+             .home-svg-child-con{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              
+              height: 40px;
+              
+              border-radius: 50px;
+              box-shadow: 0px 2px 2px 0.5px rgb(216, 216, 216);
+             }
+
+            #preloader{
+              height: 100vh;
+              width: 100%;
+              background: black;
+              color: white;
+              position: fixed;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: 55;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+            }
+            #preloader.text-con{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 60px;
+              width: 280px;
+              font-size: 20px;
+              font-weight: 800;
+              overflow: hidden;
+              color: white;
+
+            }
+
 
             .background-vid{
               position: fixed;
               object-fit: cover;
-              width: 100vw;
+              width: 100%;
               height: 100vh;
               right: 0;
               bottom: 0;
-              z-index: -1;
+              z-index: -100;
             }
 
 
@@ -24,17 +81,18 @@
               text-align: center;
               padding: 0px 10em;
              
-            font-size: 14px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            font-family: "Oleo Script", system-ui;
             margin-bottom: 0.5em;
-            font-weight: 500;
+            
             letter-spacing: 0.5;
             }
             .project-head{
                 width: 100%;
                 height: 17em;
                 /* background-image: linear-gradient(to right,  rgb(199, 199, 199), rgb(219, 222, 250)); */
-                background-image: linear-gradient(to right,  #c5c9ce, #c5c9ce);
+                background-image: linear-gradient(to right,  #00008B, #05052f);
+                background-color: #00008B;
                 /* padding: 2em; */
                 margin: 0px;
                 
@@ -53,10 +111,10 @@
               }
               .project-img{
                 
-                width: 80%;
-                height: 230px;
+                width: 100%;
+                height: auto;
                 margin: 0px;
-                padding: 0px;
+                padding: 3px;
                 border-radius: 5px;
                 -webkit-transform: scale(1);
                   transform: scale(1);
@@ -89,7 +147,7 @@
                 font-size: 14px;
                 color: rgb(0, 0, 0);
                 font-size: 13px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 font-weight: 400;
                 
               }
@@ -103,7 +161,7 @@
               .project-var a{
                 text-decoration: none;
                 font-size: 13px;
-                color: #04091E;
+                color: #ffffff;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-weight: 600;
               }
@@ -112,7 +170,7 @@
                 height: 30px;
                 /* background-image: linear-gradient(to right, #04091E, #04091E) ; */
                 /* background-image: linear-gradient(to right, #c5c9ce, #c5c9ce); */
-                background-color: #fdfdfd;
+                background-color: #131312;
                 border:1px solid #666666 ;
                 margin: 0px 20px;
                 padding: 0px;
@@ -146,7 +204,7 @@
               }
               .project-name p{
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 font-weight: 500;
                 color: black;
               }
@@ -182,7 +240,7 @@
                 justify-content: center;
                 text-align: center;
                 width: 80%;
-                padding: 0px 2em;
+                padding: 2em 0em 2em ;
                  margin: auto;
               }
           
@@ -313,7 +371,7 @@
             }
 
             .logo{
-                width: 140px;
+                width: 120px;
                 /* z-index: 1; */
                 
                 padding: 5px;
@@ -327,13 +385,15 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100vw;
-                height: 5rem;
+                height: 4rem;
                 padding: 1em 10em;
                 background-color: rgb(255, 255, 255);
-                position: sticky;
+                position: fixed;
+
                 z-index: 1;
                 border-radius:0px 0px 10px 10px;
                 top: 0;
+                bottom: 0px;
             }
 
 
@@ -365,7 +425,7 @@
             .menulist a{
                 text-decoration: none;
                 color: rgb(0, 0, 0);
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 font-weight: 700;
                 font-size: 12px;
                 letter-spacing: 0.6px;
@@ -374,7 +434,7 @@
 
             .about-section{
               width: 100%;
-              padding: 0px 3em;
+              padding: 1em 3em;
               margin: 0px auto;
 
             }
@@ -383,7 +443,7 @@
 
             .name{
                 font-size: 45px;
-                font-family:  'Raleway', sans-serif;
+                font-family: "Marcellus SC", serif;
                 font-weight: 600;
                 /* position: relative;
                 top: 50px; */
@@ -396,7 +456,7 @@
                 /* position: relative;
                 top: 49px; */
                 font-size: 27px;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Oleo Script", system-ui;
             }
 
             .button {
@@ -410,7 +470,7 @@
                 font-size: 15px;
                 
                 font-weight: 500;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 text-align: center;
                 display: flex;
                 flex-direction: column; 
@@ -428,7 +488,7 @@
               font-size: 15px;
               
               font-weight: 500;
-              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-family: "Exo", sans-serif;
               text-align: center;
               display: flex;
               flex-direction: column; 
@@ -445,7 +505,12 @@
               color: #e53529;
             }
             .container{
+              position: relative;
+              left: 5em;
                 display: block;
+            }
+            .header-con{
+              width: 50vw;
             }
             
             
@@ -619,11 +684,11 @@
             .ppp{
                 text-align: center;
                 width: 50%; 
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-size: 14px;
+                font-family: "Oleo Script", system-ui;
+                font-size: 16px;
                 letter-spacing: 0.5;
-                font-weight: 500;
-                color: rgb(49, 49, 49);
+                /* font-weight: 500;
+                color: rgb(49, 49, 49); */
 
             }
 
@@ -631,7 +696,7 @@
                 font-size: 30px;
                 /* margin-bottom: 2rem; */
                 padding: 0px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Marcellus SC", serif;
                 font-weight: 600;
             }
 
@@ -825,11 +890,13 @@
 
             .heade{
                 width: 100vw;
-                height: 90vh;
+                height: 100vh;
                display: flex;
-               justify-content: space-evenly;
+               justify-content:center;
                align-items: center;
                margin:0 auto;
+               padding: 0;
+               column-gap: 7em;
 
             }
 
@@ -837,6 +904,8 @@
               width: 100%;
               padding: 0px;
               margin: 0px;
+              background-image: url("png/background-wallpaper.png");
+              object-fit: cover;
             }
             
 
@@ -993,14 +1062,18 @@
             height: 2.7rem;
             border: 0px white;
             padding: 1rem;
+            border-radius: 2px 0px 0px 2px;
         }
         .input2{
-            width: 13%;
+          
+            width: 3em;
             height: 2.7rem;
             border: 0px white;
             background-color: #9584ec;
-            /* padding: 5px; */
+            padding: 1px;
             color: white;
+            text-align: center;
+            border-radius: 0px 2px 2px 0px;
         }
         .bbutton{
             display: flex;
@@ -1038,8 +1111,9 @@
 
         .animation{
             opacity: 0;
-            transition: all 1s;
+            transition: all 1s ease-in;
             transform: translateY(10px);
+            animation-fill-mode: forwards;
             
         }
 
@@ -1239,6 +1313,7 @@
         }
 
         .mouse{
+          display: none;
             width: 32px;
             height: 41px;
             border: 1.7px solid rgb(48, 48, 48);
@@ -1515,8 +1590,8 @@
       
           
           .about-head p{
-            font-size: 14px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            font-family: "Oleo Script", system-ui;
             margin-bottom: 0.5em;
             font-weight: 500;
             letter-spacing: 0.5;
@@ -1533,10 +1608,11 @@
           .about-body{
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin: auto ;
-            padding: 2em 5em;
-            /* padding-right: 2em; */
+            padding: 2em 9em;
+            position: relative;
+            left: 3em;
             
             
             
@@ -1557,13 +1633,14 @@
            .about-body h2{
             font-size: 20px;
             font-weight: 700;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: "Marcellus SC", serif;
             padding-bottom: 1em 8em;
           }
           .text p{
             min-width: 250px;
-            font-size: 13px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.5em;
+            font-size: 14px;
+            font-family: "Exo", sans-serif;
             padding-bottom: 1.5em;
           }
           .skill{
@@ -1582,7 +1659,7 @@
             
             font-size: 11px;
             text-align: center;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: "Exo", sans-serif;
             
           }
       
@@ -2021,6 +2098,7 @@
             .ppp{
                 text-align: center;
                 width: 100%;
+                font-family: "Oleo Script", system-ui;
 
             }
 
@@ -2392,7 +2470,7 @@
             .about-head p{
                 display: none;
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Oleo Script", system-ui;
                 margin-bottom: 0;
                 
               }
@@ -2424,14 +2502,14 @@
                .about-body h2{
                 font-size: 15px;
                 /* font-weight: 700; */
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Marcellus SC", serif;
                 padding-bottom: 1em;
               }
               .text p{
                 text-align: justify;
                 height: fit-content;
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 padding-bottom: 1.5em;
                 color: rgb(102, 102, 102);
               }
@@ -2449,7 +2527,7 @@
                 width: 100%;
                 font-size: 65%;
                 text-align: center;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
               }
           
               .testing{
@@ -2753,6 +2831,7 @@
                 text-align: left;
                 font-size: 14px;
                 color: rgb(102, 102, 102);
+                font-family: "Oleo Script", system-ui;
           
               }
 
@@ -2760,11 +2839,11 @@
 
               .project-header p{
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Oleo Script", system-ui;
                 margin-bottom: 0.5em;
-                font-weight: 500;
+                
                 letter-spacing: 0.5;
-                text-align: justify;
+                text-align: center;
                 width: 100%;
                 
                 }
@@ -2821,7 +2900,7 @@
                     font-size: 13.5px;
                     color: rgb(44, 44, 44);
                     
-                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-family: "Exo", sans-serif;
                     font-weight: 400;
                     
                   }
@@ -2924,6 +3003,38 @@
                 display: none;
             }
 
+
+            .home-svg-con{
+              
+              width: 50%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              column-gap: 1.5em;
+              padding-top: 4px;
+              
+              
+             }
+  
+             .home-svg-child{
+              width: 10px;
+             }
+  
+             .home-svg-child-con{
+              position: relative;
+              top: 0em;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 23px;
+              
+              height: 23px;
+              
+              border-radius: 50px;
+              box-shadow: 0px 2px 2px 0.5px rgb(216, 216, 216);
+             }
+
             .background-vid{
               position:fixed;
               object-fit: cover;
@@ -2942,12 +3053,12 @@
               position: relative;
              
               font-size: 15px;
-              font-family: 'Roboto', sans-serif;
+              font-family: "Oleo Script", system-ui;
           }
 
           .name{
             font-size: 30px;
-            font-family:  sans-serif;
+            font-family: "Marcellus SC", serif;
             font-weight: 550;
             margin: 0px;
             text-align: left;
@@ -2968,7 +3079,7 @@
             color: rgb(255, 255, 255);
             font-size: 13px;
             margin-top: 0px;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Exo", sans-serif;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -2990,7 +3101,7 @@
           color: rgb(255, 255, 255);
           font-size: 13px;
           margin-top: 0px;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Exo", sans-serif;
           text-align: center;
           display: flex;
           flex-direction: column;
@@ -3154,6 +3265,7 @@
             .ppp{
                 text-align: center;
                 width: 100%;
+                font-family: "Oleo Script", system-ui;
 
             }
 
@@ -3617,7 +3729,7 @@
             .about-head p{
                 display: none;
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Oleo Script", system-ui;
                 margin-bottom: 0;
                 
               }
@@ -3634,6 +3746,8 @@
                 align-items: center;
                 padding: 0em 2em;
                 margin: auto;
+                position: relative;
+                left: 0;
                 
                 
               }
@@ -3652,14 +3766,14 @@
                .about-body h2{
                 font-size: 15px;
                 /* font-weight: 700; */
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Marcellus SC", serif;
                 padding-bottom: 1em;
               }
               .text p{
                 text-align: justify;
                 
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 padding-bottom: 1.5em;
                 color: rgb(102, 102, 102);
               }
@@ -3677,7 +3791,7 @@
                 width: 100%;
                 font-size: 65%;
                 text-align: center;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
               }
           
               .testing{
@@ -3872,11 +3986,11 @@
 
             .project-header p{
               font-size: 14px;
-              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              font-family: "Oleo Script", system-ui;
               margin-bottom: 0.5em;
-              font-weight: 500;
+              
               letter-spacing: 0.5;
-              text-align: justify;
+              text-align: center;
               width: 100%;
               }
               .project-head{
@@ -3932,7 +4046,7 @@
                   font-size: 13.5px;
                   color: rgb(44, 44, 44);
                   
-                  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  font-family: "Exo", sans-serif;
                   font-weight: 400;
                   
                 }
@@ -4042,23 +4156,41 @@
 
           
             
-           
-
-            .background-vid{
-              position:fixed;
-              object-fit: cover;
-              width: 100vw;
-              height: 90vh;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              z-index: inherit;
+          .home-svg-con{
               
-            }
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 1.5em;
+            padding-top: 4px;
+            
+            
+           }
+
+           .home-svg-child{
+            width: 10px;
+           }
+
+           .home-svg-child-con{
+            position: relative;
+            top: 3.3em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 23px;
+            
+            height: 23px;
+            
+            border-radius: 50px;
+            box-shadow: 0px 2px 2px 0.5px rgb(216, 216, 216);
+           }
+
+          
 
             .heade{
-              /* position: relative; */
+              
             width: 100vw;
             height: 90vh;
             display: flex;
@@ -4067,19 +4199,28 @@
             align-items: center;
             padding-right: 7em;
             margin:  0px ;
-            z-index: -1;
+            background-image: url("png/background-wallpaper.png");
+            object-fit: fit;
             
             
           }
-            .container-for-heade{
-              position: relative;
-              width: 100%;
-              padding: 0px;
-              margin: 0px;
-            }
+
+          
+
+          .container-for-heade{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            
+            
+           
+          }
+
+          
+            
 
             .logo{
-                width: 110px;
+                width: 120px;
                 /* z-index: 1; */
                 
                 padding: 5px;
@@ -4093,10 +4234,10 @@
                 justify-content: space-between;
                 align-items: center;
                 min-width: 100vw;
-                min-height: 5rem;
+                height: 4rem;
                 padding: 0px 30px;
                 background-color: rgb(255, 255, 255);
-                position: sticky;
+                position: fixed;
                 z-index: 1;
                 border-radius:0px 0px 10px 10px;
                 top: 0;
@@ -4106,7 +4247,7 @@
 
             .uls{
                 position: fixed;
-                top: 70px;
+                top: 60px;
                 left: 100%;
                 gap: 0;
                 flex-direction: column;
@@ -4149,7 +4290,7 @@
             .menulist a{
                 text-decoration: none;
                 color: rgb(11, 10, 10);
-                font-family:  'Poppins', sans-serif;
+                font-family: "Exo", sans-serif;
                 font-weight: 700;
                 font-size: 11.5px;
                 letter-spacing: 0.5px;
@@ -4163,17 +4304,21 @@
            
 
             .container{
+              position: relative;
+              left: 0;
+              bottom: 1.7em;
               display: flex;
               padding-right: 1.5em;
               margin: 0px;
               padding-top:8px ;
+              z-index: 2;
 
           }
           
 
             .name{
                 font-size: 27px;
-                font-family:  sans-serif;
+                font-family: "Marcellus SC", serif;
                 font-weight: 550;
                 margin: 0px;
                 text-align: left;
@@ -4186,7 +4331,7 @@
                 position: relative;
                
                 font-size: 14px;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Oleo Script", system-ui;
             }
 
             
@@ -4202,7 +4347,7 @@
                 color: rgb(255, 255, 255);
                 font-size: 13px;
                 margin-top: 0px;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Exo", sans-serif;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -4224,7 +4369,7 @@
               color: rgb(255, 255, 255);
               font-size: 13px;
               margin-top: 0px;
-              font-family: 'Roboto', sans-serif;
+              font-family: "Exo", sans-serif;
               text-align: center;
               display: flex;
               flex-direction: column;
@@ -4388,17 +4533,20 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                text-align:initial  ;
+                text-align: center  ;
                 /* min-width: 100%; */
-                font-size: 14px;
-                font-family: 'Roboto', sans-serif;
+                font-size: 13px;
+                font-family: "Oleo Script", system-ui;
                 padding: 0px ;
+                font-weight: 0;
 
             }
 
             .hhh{
                 font-size: 23px;
                 padding-bottom: 0rem;
+                padding-top: 10px;
+                font-family: "Marcellus SC", serif;
             }
 
             .service-con{
@@ -4617,6 +4765,7 @@
 
             .hamburger{
                 display: block;
+                
             }
 
             .hamburger.active .bar:nth-child(2){
@@ -5021,7 +5170,7 @@
             .about-head p{
                 display: none;
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Oleo Script", system-ui;
                 margin-bottom: 0;
                 
               }
@@ -5041,6 +5190,8 @@
                 justify-content: center;
                 align-items: center;
                 padding: 0em 1em;
+                position: relative;
+                left: 0;
                 
                 
                 
@@ -5060,14 +5211,14 @@
                .about-body h2{
                 font-size: 15px;
                 /* font-weight: 700; */
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Marcellus SC", serif;
                 padding-bottom: 1em;
               }
               .text p{
                 text-align: justify;
                 
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
                 padding-bottom: 1.5em;
                 color: rgb(102, 102, 102);
               }
@@ -5086,7 +5237,7 @@
                 font-size: 9px;
                 padding: 0px 2px;
                 text-align: center;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: "Exo", sans-serif;
               }
           
               .testing{
@@ -5351,7 +5502,7 @@
             }
             
               .laptop-img{
-                width: 70%;
+                width: 90%;
                 
               }
           
@@ -5393,11 +5544,11 @@
 
               .project-header p{
                 font-size: 14px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                
                 margin-bottom: 0.5em;
-                font-weight: 500;
+                font-family: "Oleo Script", system-ui;
                 letter-spacing: 0.5;
-                text-align: justify;
+                text-align: center;
                 width: 100%;
                 }
                 .project-head{
@@ -5421,11 +5572,11 @@
                     transform: scale(1.3);
                   }
                   .project-img{
-                    
-                    width: 90%;
-                    height: 230px;
+                    width: 100%;
+                    height: auto;
+                   object-fit: contain;
                     margin: 0px;
-                    padding: 0px;
+                    padding: 5px;
                     border-radius: 5px;
                     -webkit-transform: scale(1);
                       transform: scale(1);
@@ -5452,12 +5603,15 @@
                     font-size: 13.5px;
                     color: rgb(44, 44, 44);
                     
-                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-family: "Exo", sans-serif;
                     font-weight: 400;
                     
                   }
               
                  
+
+                
+
                   .project-var{
                     width: 100%;
                     display: flex;
@@ -5538,9 +5692,9 @@
                   }
                   .project-header p{
                    font-size: 13px;
-                   font-family: 'Roboto', sans-serif;
-                   text-align: justify;
-                   font-weight: 100;
+                   font-family: "Oleo Script", system-ui;
+                   text-align: center;
+                   
                    padding: 0em;
                    letter-spacing: 0px;
                    
